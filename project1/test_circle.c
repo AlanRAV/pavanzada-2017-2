@@ -16,13 +16,13 @@ int testsRun = 0;
 
 static char * testTrueCircle() {
   bool isCircle = judgeCircle("UD");
-  muAssert("The robot returns to the same place, it is a circle", isCircle == 1);
+  muAssert("The robot does not return to the same palce, no circle", isCircle == 1);
   return 0;
 }
 
 static char * testFalseCircle() {
   bool isCircle = judgeCircle("LL");
-  muAssert("The robot does not return to the same palce, no circle", isCircle == 0);
+  muAssert("The robot returns to the same place, it is a circle", isCircle == 0);
   return 0;
 }
 
