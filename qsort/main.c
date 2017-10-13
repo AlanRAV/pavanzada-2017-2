@@ -49,6 +49,18 @@ int main(int argc, char **argv) {
 	for (int i=0; i<3; i++){
 		printf("Student %s %d \n", group[i].name, group[i].matricula);
 	}
+
+
+
+
+	printf("Which is the id?: \n");
+	scanf("%d", &neededStudent);
+	key.matricula = neededStudent;
+
+	foundStudent = (Student *) bsearch(&key, group, STUDENTS_LENGTH, sizeof(Student), cmpMatricula);
+	if (foundStudent != NULL){
+		printf("Student %s\n", );
+	}
   return 0;
 }
 
