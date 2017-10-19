@@ -51,9 +51,9 @@ static char * testNULL() {
 }
 
 static char * allTests() {
+  muRunTest(testNULL);
   muRunTest(testUnit);
   muRunTest(testUnit2);
-  muRunTest(testNULL);
   return 0;
 }
 

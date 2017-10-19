@@ -16,7 +16,7 @@
   
 
 char* reverseString(char* s) {
-    int start, end, len;
+    int i, j, len;
     char temp, *ptr = NULL;
      
     // String Lenght
@@ -29,11 +29,11 @@ char* reverseString(char* s) {
     ptr = strcpy(ptr,s);           
      
     // Swap characters
-    for (start=0,end=len-1; start<=end; start++,end--)
+    for (i=0,j=len-1; i<=j; i++,j--)
     {
-        temp = ptr[start];
-        ptr[start] = ptr[end];       
-        ptr[end] = temp;
+        temp = ptr[i];
+        ptr[i] = ptr[j];       
+        ptr[j] = temp;
     }
      
     // Return pointer of reversed string
