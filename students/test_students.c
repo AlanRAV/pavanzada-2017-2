@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "minunit.h"
-#include "kata5.h"
+#include "students.h"
 
 #define KNRM  "\x1B[0m"
 #define KRED  "\x1B[31m"
@@ -15,13 +15,7 @@
 int testsRun = 0;
 
 static char * testUnit() {
-  int n = 15;
-  int * returnSize;
-  *returnSize = n;
-
-  char ** Fizzbuzz = kata5(n, returnSize);
-
-  muAssert("error, testUnit 1 != 1", Fizzbuzz[0][0] == 1);
+  muAssert("error, testUnit 1 != 1", 1 == 1);
   return 0;
 }
 
