@@ -90,26 +90,21 @@ int main(int argc, char **argv) {
 */
 
 //Add record
-int main(int argc, char **argv) {
+/*int main(int argc, char **argv)
+{
+assert(argc == 2);
+FILE *myFile;
+myFile = fopen(argv[1], "a+b");
+assert(myFile != NULL);
 
+Student myStudent; 
+printf("New name:");
+scanf("%s", myStudent.name);
+printf("New id:");
+scanf("%d", &myStudent.id);
 
-  FILE *myFile;
-  assert(argc == 2);
-  myFile = fopen(argv[1], "a+b");
-  assert(myFile != NULL);
-
-  Student myStudent;
-  int record = atoi(argv[2]);
-  long offset = sizeof(Student) * record;
-
-  printf("New name:");
-  scanf("%s", myStudent.name);
-  printf("New id:");
-  scanf("%d", &myStudent.id);
-
-  fwrite(&myStudent, sizeof(Student),1,myFile);
-
-  fclose(myFile);
-
-  return 0;
+fwrite(&myStudent,sizeof(Student),1,myFile);
+fclose(myFile);
+return 0;
 }
+*/
